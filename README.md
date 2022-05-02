@@ -1,2 +1,2 @@
-# Nicolas-Bouffanais.github.io
-Este sera el repositorio donde subire mi portafolio como software developer. 
+# Nicolas_Bouffanais
+Este será el repositorio donde subiré mi portafolio como software developer.

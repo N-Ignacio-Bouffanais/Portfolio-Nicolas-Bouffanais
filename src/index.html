@@ -1,50 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Official website of Nicolas Bouffanais.">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Official website of Nicolas Bouffanais."
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
     <title>Nicolas Bouffanais</title>
     <!--fuentes de google-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <!--Iconos font awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <!--CSS Mio-->
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav-main">
+          <a href="/"><i class="fa-solid fa-n" id="icono-N"></i></a>
+          <ul class="nav-menu">
+            <li>
+              <a href="">Acerca de mi</a>
+            </li>
+            <li>
+              <a href="">Proyectos</a>
+            </li>
+            <li>
+              <a href="">Contacto</a>
+            </li>
+          </ul>
+          <ul class="nav-menu-right">
+            <li>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+          </ul>
+        </nav>
+        <hr />
+      </div>
+    </header>
     <main>
-        <header>
-            <div class="container">
-                <nav class="nav-main">     
-                <a href="/"><i class="fa-solid fa-n" id="icono-N"></i></a>
-                <ul class="nav-menu">
-                    <li>
-                        <a href="">About</a>
-                    </li>
-                    <li>
-                        <a href="">Projects</a>
-                    </li>
-                    <li>
-                        <a href="">Contact</a>
-                    </li>
-                </ul>
-                <ul class="nav-menu-right">
-                    <li>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </li>
-                </ul>
-            </nav>
-            <hr>
-            </div>
-        </header>
+        <div class="container">
+            <section class="about">
+                <h1>Acerca de mi</h1>
+                <div class="about-main">
+                    <div class="about-info">
+                        <p>Hola! Mi nombre es Nicolás Bouffanais, soy desarrollador de software e ingeniero en Automatización y robótica.</p>
+                        <p>Tengo 22 años y vivo en Santiago de Chile. Actualmente estoy estudiando en <span>Platzi</span>, he realizado multiples cursos de programación e Inglés.</p>
+                        <p>Mis áreas de interes son: Desarrollo Web, Analisis de datos, y manejo de sevidores Linux.</p>
+                        <p>Algunas de las tecnologias con las que he trabajado recientemente son:</p>
+                        <ul class="lista-habilidades">
+                            <li>JavaScript</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                            <li>Node js</li>
+                            <li>Git Bash</li>
+                            <li>Github</li>
+                            <li>SQL</li>
+                            <li>Python</li>
+                            <li>Excel</li>
+                            <li>React JS</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <img src="/src/static/me.jpg" alt="Foto de perfil">
+                    </div>
+                </div>
+            </section>
+            <section class="proyectos">
+                <h1>Mis proyectos</h1>
+                <div class="proyectos-main">
+                    <div class="card-container">
+                        <img src="./static/Imagen1.jpg" alt="Imagen del proyecto">
+                        <h3>Proyecto 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente aperiam nam sit, blanditiis exercitationem.</p>
+                        <a href="#">Ver mas<i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                    <div class="card-container">
+                        <img src="./static/google.JPG" alt="Imagen del proyecto">
+                        <h3>Proyecto 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente aperiam nam sit, blanditiis exercitationem.</p>
+                        <a href="#">Ver mas<i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                    <div class="card-container">
+                        <img src="./static/Imagen1.jpg" alt="Imagen del proyecto">
+                        <h3>Proyecto 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sapiente aperiam nam sit, blanditiis exercitationem.</p>
+                        <a href="#">Ver mas<i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+            </section>
+        </div>
     </main>
     <footer>
-            <a href="https://github.com/N-Ignacio-Bouffanais"> Designed & Built by Nicolas Bouffanais</a>
+      <a href="https://github.com/N-Ignacio-Bouffanais">
+        Designed & Built by Nicolas Bouffanais</a
+      >
     </footer>
-
-</body>
+  </body>
 </html>

@@ -91,6 +91,9 @@ main .about-info p{
   margin: 1rem 0;
   font-size: 2rem;
 }
+main .about-info span{
+  color: red;
+}
 main .about-main .lista-habilidades{
   display: grid;
   grid-template-columns: 1fr 1fr;

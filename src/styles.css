@@ -17,40 +17,47 @@ a {
   text-decoration: none;
 }
 
-header ul{
+header ul,ol{
   list-style: none;
 }
 
 /*Header*/
 
 .container {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 
 /*Navigation*/
 header .container .nav-main {
-  font-size: 1.8rem;
+  font-size: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 6rem;
-  padding: 2rem 0;
+  height: 6.5rem;
+  padding: 2rem auto;
 }
-header .container .nav-main ul{
+header .container .nav-main ol{
   display: flex;
 }
-header .container .nav-main ul li{
-  padding: 2rem;
+header .container .nav-main ol li{
+  counter-increment: item 1;
+  padding: 1vw;
 }
-header .container .nav-main ul li a{
+header .container .nav-main ol li a{
   padding: 0.2rem;
 }
-header .container .nav-main ul li a:hover {
+header .container .nav-main ol li a::before{
+  content: "0" counter(item) ".";
+  margin-right: 0.5rem;
+  color: red;
+  text-align: right;
+}
+header .container .nav-main ol li a:hover {
   border-bottom: 0.2rem solid #ffffff ;
 }
 #icono-N{
-  font-size: 3rem;
+  font-size: 3.2rem;
   color: red;
 }
 
@@ -61,10 +68,14 @@ header .nav-main ul.nav-menu {
 
 /*Main*/
 /*Section info*/
+main .about{
+  padding-top: 2rem;
+}
 main .about h1{
-  font-size: 2.8rem;
-  font-weight: 800;
-  margin-top: 3rem;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
 }
 main .about-main{
   display: flex;
@@ -90,35 +101,34 @@ main .about-info{
 
 main .about-info p{
   margin: 1rem 0;
-  font-size: 2rem;
-}
-main .about-info span{
-  color: red;
-  font-weight: bold;
+  font-size: 2.1rem;
 }
 main .about-main .lista-habilidades{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 2rem;
+  padding: 1.5rem 3rem;
 } 
 main .lista-habilidades li{
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 
 /*Section proyectos*/
 main .proyectos{
-  margin-top: 5rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
 }
 main .proyectos h1{
-  font-size: 2.8rem;
-  font-weight: 800;
-  margin-top: 3rem;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
 }
 main .proyectos .proyectos-main {
   display: grid;
-  gap: 2.2rem;
-  grid-auto-rows: 30rem;
+  column-gap: 2.2rem;
+  row-gap: 2.5rem;
+  grid-auto-rows: 32rem;
   grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
   margin: 1rem 0;
 }
@@ -144,5 +154,17 @@ main .card-container a{
 }
 main .card-container a:hover{
   text-decoration: underline;
+}
+
+/*Contacto*/
+main .contacto{
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+main .contacto h1{
+  font-size: 3rem;
+  font-weight: 900;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
 }
 

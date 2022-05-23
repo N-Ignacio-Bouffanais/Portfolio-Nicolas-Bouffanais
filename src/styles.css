@@ -1,3 +1,8 @@
+:root{
+  --color: aqua;
+  --color2: rgb(0, 89, 255);
+}
+
 html {
   font-family: "Open Sans",sans-serif;
   font-size: 62.5%;
@@ -29,6 +34,10 @@ header ul,ol{
 }
 
 /*Navigation*/
+#icono-N{
+  font-size: 3.8rem;
+  color: var(--color);
+}
 header .container .nav-main {
   font-size: 2rem;
   display: flex;
@@ -44,26 +53,29 @@ header .container .nav-main ol li{
   counter-increment: item 1;
   padding: 1vw;
 }
-header .container .nav-main ol li a{
-  padding: 0.2rem;
-}
-header .container .nav-main ol li a::before{
+
+header .nav-link a::before{
   content: "0" counter(item) ".";
   margin-right: 0.5rem;
-  color: red;
+  color: var(--color);
   text-align: right;
 }
-header .container .nav-main ol li a:hover {
+header .nav-link a:hover {
   border-bottom: 0.2rem solid #ffffff ;
-}
-#icono-N{
-  font-size: 3.2rem;
-  color: red;
 }
 
 header .nav-main ul.nav-menu {
   flex: 1;
   margin-left: 2rem;
+}
+header .nav-button{
+  border-radius: 0.4rem;
+  border: 0.1rem solid aqua;
+  padding: 0.75rem 1rem;
+}
+header .nav-button:hover{
+  color: cyan;
+  background-color: var(--color2);
 }
 
 /*Main*/
@@ -107,6 +119,7 @@ main .about-main .lista-habilidades{
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1.5rem 3rem;
+  color: aqua;
 } 
 main .lista-habilidades li{
   font-size: 2rem;

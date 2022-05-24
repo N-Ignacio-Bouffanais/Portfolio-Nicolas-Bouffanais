@@ -1,6 +1,7 @@
 :root{
   --color: aqua;
   --color2: rgb(0, 89, 255);
+  --navbar-height: 6.5rem;
 }
 
 html {
@@ -43,7 +44,7 @@ header .container .nav-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 6.5rem;
+  height: var(--navbar-height);
   padding: 2rem auto;
 }
 header .container .nav-main ol{
@@ -54,14 +55,17 @@ header .container .nav-main ol li{
   padding: 1vw;
 }
 
-header .nav-link a::before{
+header .nav-item a::before{
   content: "0" counter(item) ".";
   margin-right: 0.5rem;
   color: var(--color);
   text-align: right;
 }
-header .nav-link a:hover {
-  border-bottom: 0.2rem solid #ffffff ;
+header .nav-item a:hover {
+  color: aqua;
+}
+header .nav-link {
+  transition: 0.5s ease;
 }
 
 header .nav-main ul.nav-menu {
@@ -76,6 +80,20 @@ header .nav-button{
 header .nav-button:hover{
   color: cyan;
   background-color: var(--color2);
+}
+/*icono hamburguesa barra de navegacion*/
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 2.5rem;
+  height: 0.3rem;
+  margin: 0.5rem auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
 }
 
 /*Main*/
@@ -169,7 +187,8 @@ main .card-container a:hover{
   text-decoration: underline;
 }
 
-/*Contacto*/
+
+/*Seccion de Contacto*/
 main .contacto{
   margin-top: 3rem;
   padding-top: 2rem;
@@ -262,3 +281,41 @@ main .contact-container .contact-info{
   padding: 0.6rem;
 }
 
+
+/*media querie*/
+@media (max-width:768px) {
+  .hamburger{
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(0.8rem) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-0.8rem) rotate(-45deg);
+  }
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: var(--navbar-height);
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 3.4rem;
+    gap: 3.4rem;
+    font-size: 2.4rem;
+  }
+
+  .nav-link{
+    margin: 1.6rem 0;
+  }
+
+  .nav-menu.active{
+    left: 0;
+  }
+}

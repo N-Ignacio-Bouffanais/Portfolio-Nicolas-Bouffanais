@@ -197,6 +197,7 @@ main .contact-container > * {
 main .contact-container .contact-form{
   flex-grow: 99;
   background: #222222;
+  padding: 3rem;
 }
 
 .contact-form form {
@@ -244,7 +245,7 @@ main .contact-container .contact-info{
   width: 100%;
   flex-basis: 35rem;
   flex-grow: 99;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .contact-info h2,
@@ -258,6 +259,6 @@ main .contact-container .contact-info{
 }
 
 .contact-info ul li {
-  padding: 0.4rem;
+  padding: 0.6rem;
 }
 

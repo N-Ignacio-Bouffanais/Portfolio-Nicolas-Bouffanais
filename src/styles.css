@@ -1,7 +1,7 @@
 :root{
   --color: aqua;
   --color2: rgb(0, 89, 255);
-  --navbar-height: 6.5rem;
+  --navbar-height: 7.5rem;
 }
 
 html {
@@ -73,13 +73,15 @@ header .nav-main ul.nav-menu {
   margin-left: 2rem;
 }
 header .nav-button{
+  color: var(--color);
   border-radius: 0.4rem;
-  border: 0.1rem solid aqua;
+  border: 0.1rem solid var(--color);
   padding: 0.75rem 1rem;
 }
 header .nav-button:hover{
-  color: cyan;
-  background-color: var(--color2);
+  opacity: 0.7;
+  background-color: transparent;
+  transition: 0.2s ease-in-out;
 }
 /*icono hamburguesa barra de navegacion*/
 .hamburger{
@@ -125,8 +127,8 @@ main .about-image img{
   height: 100%;
 }
 main .about-info{
-  flex-basis: 80rem;
-  flex-grow: 999;
+  flex-basis: 45rem;
+  flex-grow: 9;
 }
 
 main .about-info p{

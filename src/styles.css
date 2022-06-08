@@ -1,7 +1,10 @@
 :root{
   --color: aqua;
-  --color2: rgb(0, 89, 255);
-  --navbar-height: 7.5rem;
+  --color-bg:#1d1d1d;
+  --color-bg2:#1bb09b;
+  --color-bg3:#0d7265;
+  --navbar-height: 7.7rem;
+  --navbar-bg:#181717;
 }
 
 html {
@@ -14,7 +17,7 @@ html {
   box-sizing: border-box;
 }
 body{
-  background: #1d1d1d;
+  background: var(--color-bg);
   color: white;
   font-size: 1.6rem;
 }
@@ -29,28 +32,25 @@ header ul,ol{
 
 /*Header*/
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
-
 /*Navigation*/
 #icono-N{
   font-size: 3.8rem;
   color: var(--color);
 }
-header .container .nav-main {
+.nav-main {
   font-size: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: var(--navbar-height);
-  padding: 2rem auto;
+  background: var(--navbar-bg);
+  padding: 0 6vw;
+  margin: 0 auto;
 }
-header .container .nav-main ol{
+.nav-main ol{
   display: flex;
 }
-header .container .nav-main ol li{
+.nav-main ol li{
   counter-increment: item 1;
   padding: 1vw;
 }
@@ -101,13 +101,16 @@ header .nav-button:hover{
 /*Main*/
 /*Section info*/
 main .about{
-  padding-top: 2rem;
+  padding: 2rem 7vw 5rem 6vw;
+  margin: 0 auto;
+  min-height: 60rem;
 }
 main .about h1{
-  font-size: 3rem;
-  font-weight: 900;
-  margin-top: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 3.8rem;
+  margin: 1.5rem 0;
+}
+.about span{
+  color: var(--color);
 }
 main .about-main{
   display: flex;
@@ -139,7 +142,7 @@ main .about-main .lista-habilidades{
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1.5rem 3rem;
-  color: aqua;
+  color: var(--color);
 } 
 main .lista-habilidades li{
   font-size: 2rem;
@@ -147,78 +150,85 @@ main .lista-habilidades li{
 
 
 /*Section proyectos*/
-main .proyectos{
-  margin-top: 3rem;
-  padding-top: 2rem;
+.proyectos{
+  padding: 2rem 7vw 5rem 6vw;
+  margin: 0 auto;
+  background: #1bb09b;
 }
-main .proyectos h1{
-  font-size: 3rem;
-  font-weight: 900;
-  margin-top: 1.2rem;
-  margin-bottom: 1rem;
+.proyectos h1{
+  font-size: 3.8rem;
+  font-weight: 800;
+  margin: 1.5rem 0;
+  color: #333333;
 }
-main .proyectos .proyectos-main {
+.proyectos-main {
   display: grid;
-  column-gap: 2.2rem;
-  row-gap: 2.5rem;
-  grid-auto-rows: 32rem;
+  gap: 2.7rem;
+  grid-auto-rows: 35rem;
   grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
   margin: 1rem 0;
 }
-main .card-container{
-  justify-content: space-around ;
+.card-container{
+  display: grid;
+  background: var(--color-bg);
+  border-radius: 0.4rem;
 }
 
-main .card-container img{
-  border: 0.7rem solid black;
-  width: 95%;
-  height: 50%;
+.card-container img{
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-size: contain;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
 }
-main .card-container h3{
+.card-body{
+  padding: 0.6rem;
+}
+.card-container h3{
   font-size: 2rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
-main .card-container a{
+.card-container a{
   padding: 1rem 0;
   color: #f2f2f2;
   text-transform: uppercase;
   font-weight: bold;
 }
-main .card-container a:hover{
+.card-container a:hover{
   text-decoration: underline;
 }
 
 
 /*Seccion de Contacto*/
-main .contacto{
-  margin-top: 3rem;
-  padding-top: 2rem;
+.contacto{
+  padding: 2rem 7vw 5rem 6vw;
+  margin: 0 auto;
 }
-main .contacto h1{
-  font-size: 3rem;
-  font-weight: 900;
-  margin: 2rem 0;
+.contacto h1{
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 2.3rem 0;
   text-align: center;
 }
-main .contact-container{
+.contact-container{
   display: flex;
   flex-wrap: wrap;
   margin: 2rem auto;
 }
-main .contacto .contact-container{
-  box-shadow: 0 0 1.5rem 0 rgba(255, 255, 255, .3);
-}
-main .contact-container ul,ol{
+.contact-container ul,ol{
   list-style: none;
 }
-main .contact-container > * {
+.contact-container > * {
   padding: 1rem;
 }
-main .contact-container .contact-form{
-  flex-grow: 99;
+.contact-container .contact-form{
+  flex-grow: 9;
+  flex-basis: 55rem;
   background: #222222;
   padding: 3rem;
+  border-radius: 1rem;
 }
 
 .contact-form form {
@@ -229,7 +239,7 @@ main .contact-container .contact-form{
   grid-column: 1 / 3;
 }
 
-main .contact-form form p{
+.contact-form form p{
   margin: 0;
   padding: 1rem;
 }
@@ -242,7 +252,7 @@ main .contact-form form p{
   outline: none;
   color: #fff;
   background: none;
-  border-bottom: 0.1rem solid #d63031;
+  border-bottom: 0.1rem solid var(--color-bg2);
 }
 
 .contact-form form button{
@@ -250,39 +260,16 @@ main .contact-form form p{
   border: none;
   color: #fff;
   width: 100%;
-  background: #b70e21;
+  background: var(--color-bg2);
   text-transform: uppercase;
 }
 .contact-form form button:hover,
 .contact-form form button:focus{
-  background: #d63031;
+  background: var(--color-bg3);
   cursor: pointer;
-  transition: background-color 1s ease-out;
+  transition: background-color 0.3s ease-out;
   outline: none;
 }
-
-main .contact-container .contact-info{
-  background: #000;
-  width: 100%;
-  flex-basis: 35rem;
-  flex-grow: 99;
-  padding: 2rem;
-}
-
-.contact-info h2,
-.contact-info p,
-.contact-info ul{
-  text-align: center;
-  margin: 0 0 1rem 0;
-}
-.contact-info span{
-  font-family: "Open Sans",sans-serif;
-}
-
-.contact-info ul li {
-  padding: 0.6rem;
-}
-
 
 /*media querie*/
 @media (max-width:768px) {

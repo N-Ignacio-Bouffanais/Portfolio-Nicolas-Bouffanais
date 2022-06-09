@@ -2,48 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Official website of Nicolas Bouffanais."
-    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0"
     />
     <title>Nicolas Bouffanais</title>
-    <!--fuentes de google-->
+    <!--fuentes de google preconect-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap"
-      rel="stylesheet"
-    />
+
     <!--Iconos font awesome-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <!--fuentes de google-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    
     <!--CSS Mio-->
     <link rel="stylesheet" href="./styles.css" />
+
+    <meta
+      name="description"
+      content="Official website of Nicolas Bouffanais."
+    />
+    <meta name="theme-color" content="#1bb09b">
+
   </head>
   <body>
     <header>
       <div class="container">
         <nav class="nav-main">
-          <a href="/"><i class="fa-solid fa-n" id="icono-N"></i></a>
+          <a href="/"><i class="fa-solid fa-n" id="icono-N" title="Home"></i></a>
           <ol class="nav-menu">
             <li class="nav-item">
-              <a class="nav-link" href="#primera_section">Acerca de mi</a>
+              <a class="nav-link" href="#primera_section" title="Ir a la section de Acerca de mi">Acerca de mi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#segunda_section">Proyectos</a>
+              <a class="nav-link" href="#segunda_section" title="Ir a la section de Proyectos">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#tercera_section">Contacto</a>
+              <a class="nav-link" href="#tercera_section" title="Ir a la section de Contacto">Contacto</a>
             </li>
             <li>
-              <a class="nav-button" href="./static/Profile.pdf" target="_blank">Descargar CV</a>
+              <a class="nav-button" href="./static/Profile.pdf" title="Descargar Curriculum Vitae" target="_blank">Descargar CV</a>
             </li>
           </ol>
           <div class="hamburger">
@@ -77,7 +83,7 @@
                         </ul>
                     </div>
                     <div class="about-image">
-                        <img src="./static/me.jpg" alt="Foto de perfil">
+                        <img src="./static/me.jpeg" alt="Foto de perfil">
                     </div>
                 </div>
             </section>
@@ -85,59 +91,60 @@
                 <h1>Mis proyectos</h1>
                 <div class="proyectos-main">
                     <div class="card-container">
-                        <img src="./static/Imagen1.jpg" alt="Imagen del proyecto">
+                      <div class="proyect-image-container">
+                        <img src="./static/Imagen1.jpeg" alt="Imagen del proyecto">
+                      </div>
                         <div class="card-body">
-                          <h3>Clon de Google</h3>
+                          <h2>Clon de Google</h2>
                           <p>Este es un clon de la pagina de busqueda de Google, hecho con Html 5 y CSS.
                           </p>
-                          <a href="#">Ver mas<i class="fa-solid fa-angles-right"></i></a>
+                          <a href="https://github.com/N-Ignacio-Bouffanais/Google-clone"  title="ver repositorio del proyecto">Ver mas<i class="fa-solid fa-angles-right"></i></a>
                         </div>
                     </div>
                     <div class="card-container">
-                        <img src="./static/Imagen1.jpg" alt="Imagen del proyecto">
+                      <div class="proyect-image-container">
+                        <img src="./static/Imagen1.jpeg" alt="Imagen del proyecto">
+                      </div>
                         <div class="card-body">
-                          <h3>Clon de Google</h3>
+                          <h2>Clon de Google</h2>
                           <p>Este es un clon de la pagina de busqueda de Google, hecho con Html 5 y CSS.
                           </p>
-                          <a href="#">Ver mas<i class="fa-solid fa-angles-right"></i></a>
+                          <a href="https://github.com/N-Ignacio-Bouffanais/Google-clone"  title="ver repositorio del proyecto">Ver mas<i class="fa-solid fa-angles-right"></i></a>
                         </div>
-                    </div>   
+                    </div> 
                     <div class="card-container">
-                        <img src="./static/Imagen1.jpg" alt="Imagen del proyecto">
+                      <div class="proyect-image-container">
+                        <img src="./static/Imagen1.jpeg" alt="Imagen del proyecto">
+                      </div>
                         <div class="card-body">
-                          <h3>Clon de Google</h3>
+                          <h2>Clon de Google</h2>
                           <p>Este es un clon de la pagina de busqueda de Google, hecho con Html 5 y CSS.
                           </p>
-                          <a href="#">Ver mas<i class="fa-solid fa-angles-right"></i></a>
+                          <a href="https://github.com/N-Ignacio-Bouffanais/Google-clone"  title="ver repositorio del proyecto">Ver mas<i class="fa-solid fa-angles-right"></i></a>
                         </div>
-                    </div>   
+                    </div> 
                     <div class="card-container">
-                        <img src="./static/Imagen1.jpg" alt="Imagen del proyecto">
+                      <div class="proyect-image-container">
+                        <img src="./static/Imagen1.jpeg" alt="Imagen del proyecto">
+                      </div>
                         <div class="card-body">
-                          <h3>Clon de Google</h3>
+                          <h2>Clon de Google</h2>
                           <p>Este es un clon de la pagina de busqueda de Google, hecho con Html 5 y CSS.
                           </p>
-                          <a href="#">Ver mas<i class="fa-solid fa-angles-right"></i></a>
+                          <a href="https://github.com/N-Ignacio-Bouffanais/Google-clone"  title="ver repositorio del proyecto">Ver mas<i class="fa-solid fa-angles-right"></i></a>
                         </div>
-                    </div>   
+                    </div> 
                     <div class="card-container">
-                        <img src="./static/Imagen1.jpg" alt="Imagen del proyecto">
+                      <div class="proyect-image-container">
+                        <img src="./static/Imagen1.jpeg" alt="Imagen del proyecto">
+                      </div>
                         <div class="card-body">
-                          <h3>Clon de Google</h3>
+                          <h2>Clon de Google</h2>
                           <p>Este es un clon de la pagina de busqueda de Google, hecho con Html 5 y CSS.
                           </p>
-                          <a href="#">Ver mas<i class="fa-solid fa-angles-right"></i></a>
+                          <a href="https://github.com/N-Ignacio-Bouffanais/Google-clone"  title="ver repositorio del proyecto">Ver mas<i class="fa-solid fa-angles-right"></i></a>
                         </div>
-                    </div>   
-                    <div class="card-container">
-                        <img src="./static/Imagen1.jpg" alt="Imagen del proyecto">
-                        <div class="card-body">
-                          <h3>Clon de Google</h3>
-                          <p>Este es un clon de la pagina de busqueda de Google, hecho con Html 5 y CSS.
-                          </p>
-                          <a href="#">Ver mas<i class="fa-solid fa-angles-right"></i></a>
-                        </div>
-                    </div>                    
+                    </div>                  
                 </div>
             </section>
             <section id="tercera_section" class="contacto">
@@ -151,19 +158,19 @@
                     </p>
                     <p>
                       <label for="correo">Correo electronico</label>
-                      <input type="email" name="correo">
+                      <input type="email" name="correo" id="correo">
                     </p>
                     <p>
                       <label for="telefono">Teléfono</label>
-                      <input type="tel" name="telefono">
+                      <input type="tel" name="telefono" id="telefono">
                     </p>
                     <p>
                       <label for="asunto">Asunto</label>
-                      <input type="text" name="asunto">
+                      <input type="text" name="asunto" id="asunto">
                     </p>
                     <p class="block">
                       <label for="mensaje">Mensaje</label>
-                      <textarea name="mensaje" rows="4"></textarea>
+                      <textarea name="mensaje" rows="4" id="mensaje"></textarea>
                     </p>
                     <p class="block">
                       <button type="submit">Enviar</button>
@@ -178,22 +185,22 @@
       <div class="footer-container">
         <ul>
           <li>
-            <a class="icons-footer" href="https://github.com/N-Ignacio-Bouffanais" target="_blank">
+            <a class="icons-footer" href="https://github.com/N-Ignacio-Bouffanais" target="_blank" title="Ver Perfil de Github">
               <i class="fa-brands fa-github"></i>
             </a>
           </li>
           <li>
-            <a class="icons-footer" href="https://twitter.com/N_Bouffanais" target="_blank">
+            <a class="icons-footer" href="https://twitter.com/N_Bouffanais" target="_blank" title="Ver Perfil de Twiter">
               <i class="fa-brands fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="icons-footer" href="https://www.instagram.com/n_bouffanais/" target="_blank">
+            <a class="icons-footer" href="https://www.instagram.com/n_bouffanais/" target="_blank" title="Ver Perfil de Instagram">
               <i class="fa-brands fa-instagram"></i>
             </a>
           </li>
           <li>
-            <a class="icons-footer" href="https://www.linkedin.com/in/nicolas-ignacio-bouffanais-lay-941989236/" target="_blank">
+            <a class="icons-footer" href="https://www.linkedin.com/in/nicolas-ignacio-bouffanais-lay-941989236/" target="_blank" title="Ver Perfil de Linkedin">
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </li>

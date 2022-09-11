@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy":"gh-pages -d ."
+    "deploy": "gh-pages -d ."
   },
   "keywords": [],
   "author": "Nicolas Bouffanais <nicolas.bouffanais.1999@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "gh-pages": "^3.2.3"
+  },
+  "devDependencies": {
+    "eslint": "8.23.0"
   }
 }

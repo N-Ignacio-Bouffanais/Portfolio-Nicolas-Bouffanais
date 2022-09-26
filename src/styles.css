@@ -1,11 +1,12 @@
 :root{
   --color: aqua;
+  --blue: #1d29c9;
   --color-bg:#1d1d1d;
   --color-bg2:#1bb09b;
-  --color-bg3:#0d7265;
   --navbar-height: 7.7rem;
   --navbar-bg:#141313;
   --virtual-widht:85vw;
+  --tw-gradient-stops: aqua, #1d29c9;
 }
 
 html {
@@ -107,20 +108,19 @@ main .about{
   margin: 0 auto;
   min-height: 60rem;
 }
-main .about-title p{
-  font-size: 1.8rem;
-  font-weight: 400;
-  margin: 1.5rem 0;
-  letter-spacing: 0.1rem;
-  color: var(--color);
-}
 main .about-title h1{
-  font-size: 3.6rem;
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 2.5rem 0;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right,var(--tw-gradient-stops));
 }
 main .about-main{
   display: flex;
   flex-wrap: wrap;
-  color: #b9b9b9;
+  color: white;
   justify-content: center;
   gap: 1rem;
 }
@@ -165,13 +165,13 @@ main .about-image img{
 .proyectos{
   padding: 2rem 0 10rem 0;
   margin: 0 auto;
-  background: var(--color-bg2);
+  background: var(--blue);
 }
 .proyectos h1{
-  font-size: 3rem;
-  font-weight: 800;
-  margin: 2rem auto;
-  color: #333333;
+  font-size: 3.4rem;
+  font-weight: 700;
+  margin: 2.5rem auto;
+  color: white;
   width: var(--virtual-widht);
 }
 .proyectos-main {

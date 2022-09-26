@@ -1,10 +1,12 @@
 :root{
   --color: aqua;
+  --blue: #1d29c9;
   --color-bg:#1d1d1d;
   --color-bg2:#1bb09b;
-  --color-bg3:#0d7265;
   --navbar-height: 7.7rem;
   --navbar-bg:#141313;
+  --virtual-widht:85vw;
+  --tw-gradient-stops: aqua, #1d29c9;
 }
 
 html {
@@ -26,12 +28,13 @@ a {
   text-decoration: none;
 }
 
+/*Header*/
 header ul,ol{
   list-style: none;
 }
-
-/*Header*/
-
+header .container{
+  background: var(--navbar-bg);
+}
 /*Navigation*/
 #icono-N{
   font-size: 3.8rem;
@@ -43,8 +46,7 @@ header ul,ol{
   justify-content: space-between;
   align-items: center;
   height: var(--navbar-height);
-  background: var(--navbar-bg);
-  padding: 0 7vw;
+  width: var(--virtual-widht);
   margin: 0 auto;
 }
 .nav-main ol{
@@ -62,7 +64,7 @@ header .nav-item a::before{
   text-align: right;
 }
 header .nav-item a:hover {
-  color: aqua;
+  color: var(--color);
 }
 header .nav-link {
   transition: 0.5s ease;
@@ -101,33 +103,26 @@ header .nav-button:hover{
 /*Main*/
 /*Section info*/
 main .about{
-  padding: 2rem 8vw 5rem 7vw;
+  padding: 3rem 0 5rem 0;
+  width: var(--virtual-widht);
   margin: 0 auto;
   min-height: 60rem;
 }
-main .about h1{
-  font-size: 3.8rem;
-  margin: 1.5rem 0;
-}
-.about span{
-  color: var(--color);
+main .about-title h1{
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 2.5rem 0;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right,var(--tw-gradient-stops));
 }
 main .about-main{
   display: flex;
-  gap: 5rem;
   flex-wrap: wrap;
-}
-main .about-image{
-  flex-basis: 30rem;
-  flex-grow: 1;
-  max-width: 30rem;
-  max-height: 30rem;
-  border: 0.7rem solid black;
-}
-main .about-image img{
-  background-size: contain;
-  width: 100%;
-  height: 100%;
+  color: white;
+  justify-content: center;
+  gap: 1rem;
 }
 main .about-info{
   flex-basis: 45rem;
@@ -142,31 +137,51 @@ main .about-main .lista-habilidades{
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1.5rem 3rem;
-  color: var(--color);
+  list-style: none;
 } 
 main .lista-habilidades li{
   font-size: 2rem;
+  color: white;
+  line-height: 3.2rem;
 }
-
+main .lista-habilidades li::before{
+  content: "-> ";
+  color: var(--color);
+}
+main .about-image{
+  flex-basis: 30rem;
+  flex-grow: 1;
+  max-width: 30rem;
+  max-height: 30rem;
+}
+main .about-image img{
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+}
 
 /*Section proyectos*/
 .proyectos{
-  padding: 2rem 8vw 10rem 7vw;
+  padding: 2rem 0 10rem 0;
   margin: 0 auto;
-  background: #1bb09b;
+  background: var(--blue);
 }
 .proyectos h1{
-  font-size: 3.8rem;
-  font-weight: 800;
-  margin: 1.5rem 0;
-  color: #333333;
+  font-size: 3.4rem;
+  font-weight: 700;
+  margin: 2.5rem auto;
+  color: white;
+  width: var(--virtual-widht);
 }
 .proyectos-main {
   display: grid;
+  width: var(--virtual-widht);
   gap: 2.7rem;
   grid-auto-rows: 35rem;
-  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
-  margin: 1rem 0;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  margin: 1rem auto;
+
 }
 .card-container{
   display: grid;

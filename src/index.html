@@ -1,183 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0"
-    />
-    <title>Nicolas Bouffanais</title>
-    <!--fuentes de google preconect-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!--Iconos font awesome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <!--fuentes de google-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap"
-      rel="stylesheet"
-    />
-    
-    <!--CSS Mio-->
-    <link rel="stylesheet" href="./styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" />
+  <title>Nicolas Bouffanais</title>
+  <!--fuentes de google preconect-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <meta
-      name="description"
-      content="Portafolio de Nicolas Bouffanais, un desarrollador de software, frontend developer especializado en Reactjs, CSS, y HTML."
-    />
-    <meta name="theme-color" content="#1bb09b">
+  <!--Iconos font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <!--fuentes de google-->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet" />
 
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <nav class="nav-main">
-          <a href="/"><i class="fa-solid fa-n" id="icono-N" title="Home"></i></a>
-          <ol class="nav-menu">
-            <li class="nav-item">
-              <a class="nav-link" href="#primera_section" title="Ir a la section de Acerca de mi">Acerca de mi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#segunda_section" title="Ir a la section de Proyectos">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#tercera_section" title="Ir a la section de Contacto">Contacto</a>
-            </li>
-            <li>
-              <a class="nav-button" href="./static/resume.pdf" title="Descargar Curriculum Vitae" target="_blank">Descargar CV</a>
-            </li>
-          </ol>
-          <div class="hamburger">
-            <span class="bar" ></span>
-            <span class="bar" ></span>
-            <span class="bar" ></span>
+  <!--CSS Mio-->
+  <link rel="stylesheet" href="./styles.css" />
+
+  <meta name="description"
+    content="Portafolio de Nicolas Bouffanais, un desarrollador de software, frontend developer especializado en Reactjs, CSS, y HTML." />
+  <meta name="theme-color" content="#1bb09b">
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav-main">
+        <a href="/src/"><i class="fa-solid fa-n" id="icono-N" title="Home"></i></a>
+        <ol class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#primera_section" title="Ir a la section de Acerca de mi">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#segunda_section" title="Ir a la section de Proyectos">Projects</a>
+          </li>
+          <li>
+            <a class="nav-button" href="./static/resume.pdf" title="Descargar Curriculum Vitae"
+              target="_blank">Resume</a>
+          </li>
+        </ol>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section id="primera_section" class="about">
+        <div class="about-title">
+          <h1>Hi, I'm Nicolás Bouffanais</h1>
+        </div>
+        <div class="about-main">
+          <div class="about-info">
+            <p>I'm Full stack developer in JavaScript</p>
+            <p>I had the opportunity to work as a junior in a software development company for 4 months, and I am currently studying
+            bakend with Express and Typescript</p>
+            <p>Here are a few technologies I’ve been working with recently:</p>
+            <ul class="lista-habilidades">
+              <li>JavaScript (ES6+)</li>
+              <li>TypeScript</li>
+              <li>React JS</li>
+              <li>Node js</li>
+              <li>Nextjs</li>
+              <li>Express</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+            </ul>
           </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-        <div class="container">
-            <section id="primera_section" class="about">
-                <h1>Acerca de mi</h1>
-                <div class="about-main">
-                    <div class="about-info">
-                        <p>Mi nombre es <span>Nicolás Bouffanais</span>, tengo 22 años, soy desarrollador de software e ingeniero en Automatización y robótica. Tengo experiencia como Frontend Developer Junior y desarrollador de tecnologías IOT. </p>
-                        <p>Mis áreas de interes son: Desarrollo Web, Desarrollo de software y Ciencia de datos.</p>
-                        <p>Algunas de las tecnologias con las que he trabajado son:</p>
-                        <ul class="lista-habilidades">
-                            <li>JavaScript</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
-                            <li>Node js</li>
-                            <li>Git Bash</li>
-                            <li>Github</li>
-                            <li>MySQL</li>
-                            <li>MongoDB</li>
-                            <li>React JS</li>
-                            <li>Python</li>
-                        </ul>
-                    </div>
-                    <div class="about-image">
-                        <img src="./static/me.jpeg" alt="Foto de perfil">
-                    </div>
-                </div>
-            </section>
-            <section id="segunda_section" class="proyectos">
-                <h1>Mis proyectos</h1>
-                <div class="proyectos-main">
-                    <div class="card-container">
-                      <div class="proyect-image-container">
-                        <img src="./static/blog-rutas.JPG" alt="Imagen del proyecto">
-                      </div>
-                        <div class="card-body">
-                          <h2>Blog- Frontend developer</h2>
-                          <p>Guias y consejos sobre como ser un Frontend developer con JS,CSS y HTML.
-                          </p>
-                          <a href="https://n-ignacio-bouffanais.github.io/blog-ruta-frontend/src/"  title="ver repositorio del proyecto">Ver mas<i class="fa-solid fa-angles-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="card-container">
-                      <div class="proyect-image-container">
-                        <img src="./static/vuejs-list-crypto.JPG" alt="Imagen del proyecto">
-                      </div>
-                        <div class="card-body">
-                          <h2>Lista de cryptomonedas</h2>
-                          <p>Lista de cryptomonedas con Vuejs y la API de CoinGecko.
-                          </p>
-                          <a href="https://github.com/N-Ignacio-Bouffanais/vue-coinGecko-list"  title="ver repositorio del proyecto">Ver mas<i class="fa-solid fa-angles-right"></i></a>
-                        </div>
-                    </div> 
-                    <div class="card-container">
-                      <div class="proyect-image-container">
-                        <img src="./static/Imagen1.jpeg" alt="Imagen del proyecto">
-                      </div>
-                        <div class="card-body">
-                          <h2>Clon de Google</h2>
-                          <p>Este es un clon de la pagina de busqueda de Google, hecho con Html 5 y CSS.
-                          </p>
-                          <a href="https://github.com/N-Ignacio-Bouffanais/Google-clone"  title="ver repositorio del proyecto">Ver mas<i class="fa-solid fa-angles-right"></i></a>
-                        </div>
-                    </div> 
-                    <div class="card-container">
-                      <div class="proyect-image-container">
-                        <img src="./static/Imagen1.jpeg" alt="Imagen del proyecto">
-                      </div>
-                        <div class="card-body">
-                          <h2>Clon de Google</h2>
-                          <p>Este es un clon de la pagina de busqueda de Google, hecho con Html 5 y CSS.
-                          </p>
-                          <a href="https://github.com/N-Ignacio-Bouffanais/Google-clone"  title="ver repositorio del proyecto">Ver mas<i class="fa-solid fa-angles-right"></i></a>
-                        </div>
-                    </div> 
-                    <div class="card-container">
-                      <div class="proyect-image-container">
-                        <img src="./static/Imagen1.jpeg" alt="Imagen del proyecto">
-                      </div>
-                        <div class="card-body">
-                          <h2>Dashboard Reactjs</h2>
-                          <p>Dashboard con Websockets y Reactjs y sensores con Arduino y Raspberry.
-                          </p>
-                          <a href="https://github.com/N-Ignacio-Bouffanais/Google-clone"  title="ver repositorio del proyecto">Ver mas<i class="fa-solid fa-angles-right"></i></a>
-                        </div>
-                    </div>                  
-                </div>
-            </section>
+          <div class="about-image">
+            <img src="./static/me.jpeg" alt="Foto de perfil">
+          </div>
         </div>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <ul>
-          <li>
-            <a class="icons-footer" href="https://github.com/N-Ignacio-Bouffanais" target="_blank" title="Ver Perfil de Github">
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a class="icons-footer" href="https://twitter.com/N_Bouffanais" target="_blank" title="Ver Perfil de Twiter">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a class="icons-footer" href="https://www.instagram.com/n_bouffanais/" target="_blank" title="Ver Perfil de Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a class="icons-footer" href="https://www.linkedin.com/in/nicolas-ignacio-bouffanais-lay-941989236/" target="_blank" title="Ver Perfil de Linkedin">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
-        <div class="footer-text">
-          <p>Designed & Built by Nicolas Bouffanais</p>
+      </section>
+      <section id="segunda_section" class="proyectos">
+        <h1>Some Things I’ve Built</h1>
+        <div class="proyectos-main">
+          <div class="card-container">
+            <div class="proyect-image-container">
+              <img src="./static/blog-rutas.JPG" alt="Imagen del proyecto">
+            </div>
+            <div class="card-body">
+              <h2>Blog- Frontend developer</h2>
+              <p>Guias y consejos sobre como ser un Frontend developer con JS,CSS y HTML.
+              </p>
+              <a href="https://n-ignacio-bouffanais.github.io/blog-ruta-frontend/src/"
+                title="ver repositorio del proyecto">Ver mas<i class="fa-solid fa-angles-right"></i></a>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="proyect-image-container">
+              <img src="./static/vuejs-list-crypto.JPG" alt="Imagen del proyecto">
+            </div>
+            <div class="card-body">
+              <h2>Lista de cryptomonedas</h2>
+              <p>Lista de cryptomonedas con Vuejs y la API de CoinGecko.
+              </p>
+              <a href="https://github.com/N-Ignacio-Bouffanais/vue-coinGecko-list"
+                title="ver repositorio del proyecto">Ver mas<i class="fa-solid fa-angles-right"></i></a>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="proyect-image-container">
+              <img src="./static/Imagen1.jpeg" alt="Imagen del proyecto">
+            </div>
+            <div class="card-body">
+              <h2>Clon de Google</h2>
+              <p>Este es un clon de la pagina de busqueda de Google, hecho con Html 5 y CSS.
+              </p>
+              <a href="https://github.com/N-Ignacio-Bouffanais/Google-clone" title="ver repositorio del proyecto">Ver
+                mas<i class="fa-solid fa-angles-right"></i></a>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="proyect-image-container">
+              <img src="./static/Imagen1.jpeg" alt="Imagen del proyecto">
+            </div>
+            <div class="card-body">
+              <h2>Clon de Google</h2>
+              <p>Este es un clon de la pagina de busqueda de Google, hecho con Html 5 y CSS.
+              </p>
+              <a href="https://github.com/N-Ignacio-Bouffanais/Google-clone" title="ver repositorio del proyecto">Ver
+                mas<i class="fa-solid fa-angles-right"></i></a>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="proyect-image-container">
+              <img src="./static/Imagen1.jpeg" alt="Imagen del proyecto">
+            </div>
+            <div class="card-body">
+              <h2>Dashboard Reactjs</h2>
+              <p>Dashboard con Websockets y Reactjs y sensores con Arduino y Raspberry.
+              </p>
+              <a href="https://github.com/N-Ignacio-Bouffanais/Google-clone" title="ver repositorio del proyecto">Ver
+                mas<i class="fa-solid fa-angles-right"></i></a>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="proyect-image-container">
+              <img src="./static/Imagen1.jpeg" alt="Imagen del proyecto">
+            </div>
+            <div class="card-body">
+              <h2>Dashboard Reactjs</h2>
+              <p>Dashboard con Websockets y Reactjs y sensores con Arduino y Raspberry.
+              </p>
+              <a href="https://github.com/N-Ignacio-Bouffanais/Google-clone" title="ver repositorio del proyecto">Ver
+                mas<i class="fa-solid fa-angles-right"></i></a>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="proyect-image-container">
+              <img src="./static/Imagen1.jpeg" alt="Imagen del proyecto">
+            </div>
+            <div class="card-body">
+              <h2>Dashboard Reactjs</h2>
+              <p>Dashboard con Websockets y Reactjs y sensores con Arduino y Raspberry.
+              </p>
+              <a href="https://github.com/N-Ignacio-Bouffanais/Google-clone" title="ver repositorio del proyecto">Ver
+                mas<i class="fa-solid fa-angles-right"></i></a>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="proyect-image-container">
+              <img src="./static/Imagen1.jpeg" alt="Imagen del proyecto">
+            </div>
+            <div class="card-body">
+              <h2>Dashboard Reactjs</h2>
+              <p>Dashboard con Websockets y Reactjs y sensores con Arduino y Raspberry.
+              </p>
+              <a href="https://github.com/N-Ignacio-Bouffanais/Google-clone" title="ver repositorio del proyecto">Ver
+                mas<i class="fa-solid fa-angles-right"></i></a>
+            </div>
+          </div>
         </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <ul>
+        <li>
+          <a class="icons-footer" href="https://github.com/N-Ignacio-Bouffanais" target="_blank"
+            title="Ver Perfil de Github">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icons-footer" href="https://twitter.com/N_Bouffanais" target="_blank" title="Ver Perfil de Twiter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icons-footer" href="https://www.instagram.com/n_bouffanais/" target="_blank"
+            title="Ver Perfil de Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icons-footer" href="https://www.linkedin.com/in/nicolas-ignacio-bouffanais-lay-941989236/"
+            target="_blank" title="Ver Perfil de Linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="footer-text">
+        <p>Designed & Built by Nicolas Bouffanais</p>
       </div>
-    </footer>
-    <script src="./main.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
 </html>

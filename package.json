@@ -1,7 +1,7 @@
 {
   "name": "portafolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is my portfolio where I will put all of my projects as Frontend developer",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d ."

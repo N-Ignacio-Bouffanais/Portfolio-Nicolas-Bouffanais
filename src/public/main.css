@@ -1,0 +1,282 @@
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1d1d1d;
+  color: white;
+  font-size: 1.6rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/*Header*/
+header ul,
+header ol {
+  list-style: none;
+}
+header .container {
+  background: #141313;
+}
+header .nav-item a::before {
+  content: "0" counter(item) ".";
+  margin-right: 0.5rem;
+  color: aqua;
+  text-align: right;
+}
+header .nav-item a:hover {
+  color: aqua;
+}
+header .nav-link {
+  transition: 0.5s ease;
+}
+header .nav-button {
+  color: aqua;
+  border-radius: 0.4rem;
+  border: 0.1rem solid aqua;
+  padding: 0.75rem 1rem;
+}
+header .nav-button:hover {
+  opacity: 0.7;
+  background-color: transparent;
+  transition: 0.2s ease-in-out;
+}
+
+/*Navigation*/
+#icono-N {
+  font-size: 3.8rem;
+  color: aqua;
+}
+
+.nav-main {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7.7rem;
+  width: 85vw;
+  margin: 0 auto;
+}
+.nav-main ol {
+  display: flex;
+}
+.nav-main ol li {
+  counter-increment: item 1;
+  padding: 1vw;
+}
+.nav-main ul.nav-menu {
+  flex: 1;
+  margin-left: 2rem;
+}
+
+/*icono hamburguesa barra de navegacion*/
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 2.5rem;
+  height: 0.3rem;
+  margin: 0.5rem auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+/*Main*/
+/*Section info*/
+main .about {
+  padding: 3rem 0 5rem 0;
+  width: 85vw;
+  margin: 0 auto;
+  min-height: 60rem;
+}
+main .about .about-title h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 2.5rem 0;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, aqua, #1d29c9);
+}
+main .about .about-main {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  justify-content: center;
+  gap: 1rem;
+}
+main .about .about-main .lista-habilidades {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1.5rem 3rem;
+  list-style: none;
+}
+main .about .about-main .lista-habilidades li {
+  font-size: 2rem;
+  color: white;
+  line-height: 3.2rem;
+}
+
+main .about-info {
+  flex-basis: 45rem;
+  flex-grow: 9;
+}
+main .about-info p {
+  margin: 1rem 0;
+  font-size: 2.2rem;
+}
+
+main .lista-habilidades li::before {
+  content: "-> ";
+  color: aqua;
+}
+
+main .about-image {
+  flex-basis: 30rem;
+  flex-grow: 1;
+  max-width: 30rem;
+  max-height: 30rem;
+}
+main .about-image img {
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+}
+
+/*Section proyectos*/
+.proyectos {
+  padding: 2rem 0 10rem 0;
+  margin: 0 auto;
+  background: #1d29c9;
+}
+.proyectos h1 {
+  font-size: 3.4rem;
+  font-weight: 700;
+  margin: 2.5rem auto;
+  color: white;
+  width: 85vw;
+}
+.proyectos .proyectos-main {
+  display: grid;
+  width: 85vw;
+  gap: 2.7rem;
+  grid-auto-rows: 35rem;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  margin: 1rem auto;
+}
+
+.card-container {
+  display: grid;
+  background: #1d1d1d;
+  border-radius: 0.4rem;
+}
+.card-container img {
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+.card-container h3 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+.card-container a {
+  padding: 1rem 0;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.card-container a:hover {
+  text-decoration: underline;
+}
+.card-container .proyect-image-container {
+  flex-basis: 30rem;
+  max-width: 60rem;
+  max-height: 30rem;
+}
+.card-container .card-body {
+  padding: 0.6rem;
+}
+
+/*Footer*/
+footer {
+  padding: 3rem 8vw 1.5rem 7vw;
+  margin: 0 auto;
+  background: #141313;
+  justify-content: center;
+}
+footer ul,
+footer ol {
+  list-style: none;
+}
+footer .footer-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-container ul {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-container ul li {
+  padding: 1rem 2rem 2rem 2rem;
+}
+footer .footer-container .icons-footer {
+  font-size: 4rem;
+}
+footer .footer-container .footer-text {
+  padding: 1rem 2rem 4rem 2rem;
+}
+
+/*media querie*/
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(0.8rem) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-0.8rem) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 7.7rem;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 3.4rem;
+    gap: 3.4rem;
+    font-size: 2.4rem;
+  }
+  .nav-menu .nav-link {
+    margin: 1.6rem 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

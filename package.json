@@ -1,18 +1,27 @@
 {
-  "name": "portafolio",
+  "name": "portfolio-nicolas-bouffanais",
   "version": "1.0.0",
-  "description": "This is my portfolio where I will put all of my projects as Frontend developer",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d ."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Nicolas Bouffanais <nicolas.bouffanais.1999@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N-Ignacio-Bouffanais/Portfolio-Nicolas-Bouffanais.git"
+  },
+  "keywords": [
+    "SASS",
+    "HTML",
+    "CSS-grid"
+  ],
+  "author": "Nicolas Bouffanais",
   "license": "ISC",
-  "dependencies": {
-    "gh-pages": "3.2.3"
+  "bugs": {
+    "url": "https://github.com/N-Ignacio-Bouffanais/Portfolio-Nicolas-Bouffanais/issues"
   },
-  "devDependencies": {
-    "eslint": "8.23.0"
+  "homepage": "https://github.com/N-Ignacio-Bouffanais/Portfolio-Nicolas-Bouffanais#readme",
+  "dependencies": {
+    "sass": "1.55.0"
   }
 }

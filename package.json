@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/N-Ignacio-Bouffanais/Portfolio-Nicolas-Bouffanais#readme",
   "dependencies": {
+    "gh-pages": "4.0.0",
     "sass": "1.55.0"
   }
 }

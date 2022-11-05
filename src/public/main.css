@@ -86,13 +86,14 @@ header .nav-button:hover {
 .nav-main ol li {
   counter-increment: item 1;
   padding: 1vw;
+  margin: 0 0.4rem;
 }
 .nav-main ul.nav-menu {
   flex: 1;
   margin-left: 2rem;
 }
-.nav-main #icono-N {
-  font-size: 3.8rem;
+.nav-main #icon-home {
+  font-size: 3.2rem;
   color: aqua;
 }
 .nav-main .hamburger {
@@ -129,27 +130,58 @@ main .about .about-main {
   flex-wrap: wrap;
   color: white;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 main .about .about-main .about-info {
-  flex-basis: 45rem;
+  flex-basis: 40rem;
   flex-grow: 9;
 }
 main .about .about-main .about-info p {
   margin: 1rem 0;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
 }
-main .about .about-main .about-image {
-  flex-basis: 30rem;
+main .about .about-main .about-contact {
+  padding: 2rem 0;
+  flex-basis: 35rem;
   flex-grow: 1;
-  max-width: 30rem;
   max-height: 30rem;
 }
-main .about .about-main .about-image img {
-  background-size: contain;
-  width: 100%;
-  height: 100%;
-  border-radius: 1.5rem;
+main .about .about-main .about-contact .contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-auto-rows: 12rem;
+  gap: 2rem;
+}
+main .about .about-main .about-contact .contact-container .card {
+  border-radius: 0.8rem;
+  border-style: solid;
+  border-color: #171717;
+  padding: 2rem;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+main .about .about-main .about-contact .contact-container .card:hover {
+  transform: translateX(0) scale(1.03);
+}
+main .about .about-main .about-contact .contact-container .card i {
+  font-size: 5.5rem;
+}
+main .about .about-main .about-contact .contact-container .card img {
+  width: 5.5rem;
+}
+main .about .about-main .about-contact .contact-container .linkedin {
+  background-color: #0072b1;
+}
+main .about .about-main .about-contact .contact-container .twitter {
+  background-color: #00acee;
+}
+main .about .about-main .about-contact .contact-container .github {
+  background-color: #000;
+}
+main .about .about-main .about-contact .contact-container .frontend {
+  background-color: #1ed760;
 }
 main .about .about-main .lista-habilidades {
   display: grid;
@@ -158,9 +190,9 @@ main .about .about-main .lista-habilidades {
   list-style: none;
 }
 main .about .about-main .lista-habilidades li {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: white;
-  line-height: 3.2rem;
+  line-height: 2.4rem;
 }
 main .about .about-main .lista-habilidades li::before {
   content: "-> ";
@@ -195,6 +227,9 @@ main .about .about-main .lista-habilidades li::before {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.card-container:hover {
+  transform: translateX(0) scale(1.03);
 }
 .card-container img {
   border-radius: 0.4rem 0.4rem 0 0;

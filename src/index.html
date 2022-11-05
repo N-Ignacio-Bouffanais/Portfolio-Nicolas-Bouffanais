@@ -1,74 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!--google console-->
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Portfolio of Nicolas Bouffanais, a Frontend developer. On this website you will find projects made with HTML, CSS-GRID, Reactjs, Nextjs, and SASS."
-    />
-    <meta
-      name="keywords"
-      content="HTML,SASS,JavaScript,CSS-GRID,frontend developer"
-    />
-    <meta name="author" content="Nicolas Bouffanais" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0"
-    />
-    <title>Nicolas Bouffanais</title>
-    <!--Google fonts preconect-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!--Icons font awesome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <!--Google fonts-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <!--CSS Mine-->
-    <link rel="stylesheet" href="./public/main.css" />
-    <meta name="theme-color" content="#1bb09b" />
-  </head>
+<head>
+  <!--google console-->
 
-  <body>
-    <header>
-      <div class="container">
-        <nav class="nav-main">
-          <a href="/src/"
-            ><i class="fa-solid fa-n" id="icono-N" title="Home"></i
-          ></a>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description"
+    content="Portfolio of Nicolas Bouffanais, a Frontend developer. On this website you will find projects made with HTML, CSS-GRID, Reactjs, Nextjs, and SASS." />
+  <meta name="keywords" content="HTML,SASS,JavaScript,CSS-GRID,frontend developer" />
+  <meta name="author" content="Nicolas Bouffanais" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" />
+  <title>Nicolas Bouffanais</title>
+  <!--Google fonts preconect-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!--Icons font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet" />
+  <!--CSS Mine-->
+  <link rel="stylesheet" href="./public/main.css" />
+  <meta name="theme-color" content="#1bb09b" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav-main">
+        <a href="/src/"><i class="fa-solid fa-house" id="icon-home" title="Home"></i></a>
           <ol class="nav-menu">
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#primera_section"
-                title="Ir a la section de Acerca de mi"
-                >About me</a
-              >
+              <a class="nav-link" href="#primera_section" title="Ir a la section de Acerca de mi">About me</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#segunda_section"
-                title="Ir a la section de Proyectos"
-                >Projects</a
-              >
+              <a class="nav-link" href="#segunda_section" title="Ir a la section de Proyectos">Projects</a>
             </li>
             <li>
-              <a
-                class="nav-button"
-                href="./public/images/Nicolas Bouffanais CV.pdf"
-                title="Descargar Curriculum Vitae"
-                target="_blank"
-                >Resume</a
-              >
+              <a class="nav-button" href="./public/images/Nicolas Bouffanais CV.pdf" title="Descargar Curriculum Vitae"
+                target="_blank">Resume</a>
             </li>
           </ol>
           <div class="hamburger">
@@ -76,214 +46,211 @@
             <span class="bar"></span>
             <span class="bar"></span>
           </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <section id="primera_section" class="about">
-          <div class="about-title">
-            <h1>Hi, I'm Nicolás Bouffanais</h1>
-          </div>
-          <div class="about-main">
-            <div class="about-info">
-              <p>I'm Full stack developer in JavaScript</p>
-              <p>
-                I had the opportunity to work as a junior in a software
-                development company for 4 months, and I am currently studying
-                bakend with Express and Typescript
-              </p>
-              <p>
-                Here are a few technologies I’ve been working with recently:
-              </p>
-              <ul class="lista-habilidades">
-                <li>JavaScript (ES6+)</li>
-                <li>CSS-GRID</li>
-                <li>CSS-flexbox</li>
-                <li>SASS</li>
-                <li>React JS</li>
-                <li>Node js</li>
-                <li>Nextjs</li>
-                <li>TypeScript</li>
-                <li>EsLint</li>
-              </ul>
-            </div>
-            <div class="about-image">
-              <img src="./public/images/me.jpg" alt="Foto de perfil" />
-            </div>
-          </div>
-        </section>
-        <section id="segunda_section" class="proyectos">
-          <h1>Some Things I’ve Built</h1>
-          <div class="proyectos-main">
-            <div class="card-container">
-              <figure class="proyect-image-container">
-                <img src="./public/images/card-vuejs.JPG" alt="Imagen del proyecto" />
-              </figure>
-              <div class="card-body">
-                <h2>Blog Frontend developer</h2>
-                <p>
-                  Guides and tips to start with JavaScript,CSS, HTML and Git.
-                </p>
-              </div>
-              <div class="detail">
-                <i class="detail-icon"></i>
-                <p class="detail-date">03-10-2022</p>
-              </div>
-            </div>
-            <div class="card-container">
-              <div class="proyect-image-container">
-                <img
-                  src="./public/images/card-vuejs.JPG"
-                  alt="Imagen del proyecto"
-                />
-              </div>
-              <div class="card-body">
-                <h2>List of cryptocurrencies</h2>
-                <p>List of cryptocurrencies with Vuejs and CoinGecko's API.</p>
-              </div>
-              <div class="detail">
-                <i class="detail-icon"></i>
-                <p class="detail-date">03-10-2022</p>
-              </div>
-            </div>
-            <div class="card-container">
-              <div class="proyect-image-container">
-                <img src="./public/images/card-vuejs.JPG" alt="Imagen del proyecto" />
-              </div>
-              <div class="card-body">
-                <h2>Google Clon</h2>
-                <p>
-                  This is a clon of the google website made with HTML and CSS
-                  responsive.
-                </p>
-              </div>
-              <div class="detail">
-                <i class="detail-icon"></i>
-                <p class="detail-date">03-10-2022</p>
-              </div>
-            </div>
-            <div class="card-container">
-              <div class="proyect-image-container">
-                <img src="./public/images/card-vuejs.JPG" alt="Imagen del proyecto" />
-              </div>
-              <div class="card-body">
-                <h2>Google Clon</h2>
-                <p>
-                  This is a clon of the google website made with HTML and CSS
-                  responsive.
-                </p>
-              </div>
-              <div class="detail">
-                <i class="detail-icon"></i>
-                <p class="detail-date">03-10-2022</p>
-              </div>
-            </div>
-            <div class="card-container">
-              <div class="proyect-image-container">
-                <img src="./public/images/card-vuejs.JPG" alt="Project's image" />
-              </div>
-              <div class="card-body">
-                <h2>Reactjs Dashboard</h2>
-                <p>Dashboard with Iot devices, Websockets and Reactjs.</p>
-              </div>
-              <div class="detail">
-                <i class="detail-icon"></i>
-                <p class="detail-date">03-10-2022</p>
-              </div>
-            </div>
-            <div class="card-container">
-              <div class="proyect-image-container">
-                <img src="./public/images/card-vuejs.JPG" alt="Project's image" />
-              </div>
-              <div class="card-body">
-                <h2>Reactjs Dashboard</h2>
-                <p>Dashboard with Iot devices, Websockets and Reactjs.</p>
-              </div>
-              <div class="detail">
-                <i class="detail-icon"></i>
-                <p class="detail-date">03-10-2022</p>
-              </div>
-            </div>
-            <div class="card-container">
-              <div class="proyect-image-container">
-                <img src="./public/images/card-vuejs.JPG" alt="Project's image" />
-              </div>
-              <div class="card-body">
-                <h2>Reactjs Dashboard</h2>
-                <p>Dashboard with Iot devices, Websockets and Reactjs.</p>
-              </div>
-              <div class="detail">
-                <i class="detail-icon"></i>
-                <p class="detail-date">03-10-2022</p>
-              </div>
-            </div>
-            <div class="card-container">
-              <div class="proyect-image-container">
-                <img src="./public/images/card-vuejs.JPG" alt="Project's image" />
-              </div>
-              <div class="card-body">
-                <h2>Reactjs Dashboard</h2>
-                <p>Dashboard with Iot devices, Websockets and Reactjs.</p>
-              </div>
-              <div class="detail">
-                <i class="detail-icon"></i>
-                <p class="detail-date">03-10-2022</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <ul>
-          <li>
-            <a
-              class="icons-footer"
-              href="https://github.com/N-Ignacio-Bouffanais"
-              target="_blank"
-              title="Ver Perfil de Github"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="icons-footer"
-              href="https://twitter.com/N_Bouffanais"
-              target="_blank"
-              title="See Twitter profile"
-            >
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="icons-footer"
-              href="https://www.instagram.com/n_bouffanais/"
-              target="_blank"
-              title="See Instagram profile"
-            >
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="icons-footer"
-              href="https://www.linkedin.com/in/nicolas-ignacio-bouffanais-lay-941989236/"
-              target="_blank"
-              title="See Linkedin profile"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
-        <div class="footer-text">
-          <p>Designed & Built by Nicolas Bouffanais</p>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section id="primera_section" class="about">
+        <div class="about-title">
+          <h1>Hi, I'm Nicolás Bouffanais</h1>
         </div>
+        <div class="about-main">
+          <div class="about-info">
+            <p>I'm Frontend developer</p>
+            <p>
+              I had the opportunity to work as a junior in a software
+              development company for 4 months. I have been doing Frontend projects in <span>Frontendmentor.io</span>
+            </p>
+            <p>
+              Here are a few technologies I’ve been working with recently:
+            </p>
+            <ul class="lista-habilidades">
+              <li>JavaScript (ES6+)</li>
+              <li>HTML5</li>
+              <li>CSS-GRID</li>
+              <li>CSS-flexbox</li>
+              <li>SASS</li>
+              <li>React JS</li>
+              <li>Node js</li>
+              <li>Nextjs</li>
+              <li>TypeScript</li>
+              <li>EsLint</li>
+            </ul>
+          </div>
+          <div class="about-contact">
+            <div class="contact-container">
+              <div class="linkedin card">
+                <a class="icon-linkedin" href="https://www.linkedin.com/in/nicolas-ignacio-bouffanais-lay-941989236/"
+                  title="Nicolas' Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <div class="github card">
+                <a href="https://github.com/N-Ignacio-Bouffanais" title="Nicolas' Github"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <div class="frontend card">
+                <a href="https://www.frontendmentor.io/profile/N-Ignacio-Bouffanais" title="Frontendmentor-profile"><img
+                    src="./public/images/favicon-32x32.png" alt="icon-frontend-mentor"></a>
+              </div>
+              <div class="twitter card">
+                <a class="icon-twitter" href="https://twitter.com/N_Bouffanais" title="Nicolas' Twitter"><i
+                    class="fa-brands fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="segunda_section" class="proyectos">
+        <h1>Some Things I’ve Built</h1>
+        <div class="proyectos-main">
+          <div class="card-container">
+            <figure class="proyect-image-container">
+              <img src="./public/images/card-vuejs.JPG" alt="Imagen del proyecto" />
+            </figure>
+            <div class="card-body">
+              <h2>Blog Frontend developer</h2>
+              <p>
+                Guides and tips to start with JavaScript,CSS, HTML and Git.
+              </p>
+            </div>
+            <div class="detail">
+              <i class="detail-icon"></i>
+              <p class="detail-date">03-10-2022</p>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="proyect-image-container">
+              <img src="./public/images/card-vuejs.JPG" alt="Imagen del proyecto" />
+            </div>
+            <div class="card-body">
+              <h2>List of cryptocurrencies</h2>
+              <p>List of cryptocurrencies with Vuejs and CoinGecko's API.</p>
+            </div>
+            <div class="detail">
+              <i class="detail-icon"></i>
+              <p class="detail-date">03-10-2022</p>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="proyect-image-container">
+              <img src="./public/images/card-vuejs.JPG" alt="Imagen del proyecto" />
+            </div>
+            <div class="card-body">
+              <h2>Google Clon</h2>
+              <p>
+                This is a clon of the google website made with HTML and CSS
+                responsive.
+              </p>
+            </div>
+            <div class="detail">
+              <i class="detail-icon"></i>
+              <p class="detail-date">03-10-2022</p>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="proyect-image-container">
+              <img src="./public/images/card-vuejs.JPG" alt="Imagen del proyecto" />
+            </div>
+            <div class="card-body">
+              <h2>Google Clon</h2>
+              <p>
+                This is a clon of the google website made with HTML and CSS
+                responsive.
+              </p>
+            </div>
+            <div class="detail">
+              <i class="detail-icon"></i>
+              <p class="detail-date">03-10-2022</p>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="proyect-image-container">
+              <img src="./public/images/card-vuejs.JPG" alt="Project's image" />
+            </div>
+            <div class="card-body">
+              <h2>Reactjs Dashboard</h2>
+              <p>Dashboard with Iot devices, Websockets and Reactjs.</p>
+            </div>
+            <div class="detail">
+              <i class="detail-icon"></i>
+              <p class="detail-date">03-10-2022</p>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="proyect-image-container">
+              <img src="./public/images/card-vuejs.JPG" alt="Project's image" />
+            </div>
+            <div class="card-body">
+              <h2>Reactjs Dashboard</h2>
+              <p>Dashboard with Iot devices, Websockets and Reactjs.</p>
+            </div>
+            <div class="detail">
+              <i class="detail-icon"></i>
+              <p class="detail-date">03-10-2022</p>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="proyect-image-container">
+              <img src="./public/images/card-vuejs.JPG" alt="Project's image" />
+            </div>
+            <div class="card-body">
+              <h2>Reactjs Dashboard</h2>
+              <p>Dashboard with Iot devices, Websockets and Reactjs.</p>
+            </div>
+            <div class="detail">
+              <i class="detail-icon"></i>
+              <p class="detail-date">03-10-2022</p>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="proyect-image-container">
+              <img src="./public/images/card-vuejs.JPG" alt="Project's image" />
+            </div>
+            <div class="card-body">
+              <h2>Reactjs Dashboard</h2>
+              <p>Dashboard with Iot devices, Websockets and Reactjs.</p>
+            </div>
+            <div class="detail">
+              <i class="detail-icon"></i>
+              <p class="detail-date">03-10-2022</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <ul>
+        <li>
+          <a class="icons-footer" href="https://github.com/N-Ignacio-Bouffanais" target="_blank"
+            title="Ver Perfil de Github">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icons-footer" href="https://twitter.com/N_Bouffanais" target="_blank" title="See Twitter profile">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icons-footer" href="https://www.instagram.com/n_bouffanais/" target="_blank"
+            title="See Instagram profile">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icons-footer" href="https://www.linkedin.com/in/nicolas-ignacio-bouffanais-lay-941989236/"
+            target="_blank" title="See Linkedin profile">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="footer-text">
+        <p>Designed & Built by Nicolas Bouffanais</p>
       </div>
-    </footer>
-    <script src="./main.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
 </html>

@@ -111,7 +111,7 @@ header .nav-button:hover {
 }
 
 main .about {
-  padding: 3rem 0 2rem 0;
+  padding: 3rem 0 0;
   width: 85vw;
   margin: 0 auto;
   min-height: 60rem;
@@ -279,6 +279,25 @@ main .about .about-main .lista-habilidades li::before {
   padding: 0.2rem 0.5rem;
   background-color: #3f3f46;
   border-radius: 0.3rem;
+}
+.card-container .detail .html-icon {
+  color: #FFA500;
+}
+.card-container .detail .css-icon {
+  color: #0072b1;
+}
+.card-container .detail .js-icon {
+  color: yellow;
+}
+.card-container .detail .sass-icon {
+  color: red;
+}
+.card-container .detail .vue-icon {
+  color: #1ed760;
+}
+.card-container .detail i {
+  font-size: 2.5rem;
+  margin: 0 0.5rem;
 }
 
 /*Footer*/

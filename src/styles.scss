@@ -3,6 +3,7 @@ $color-span: #1372db;
 $color-bg: #0e0e0e;
 $color-bg2: #171717;
 $color-bg3: #27272a;
+$orange: #FFA500;
 $bg-blue-white: #3b49e2;
 $text: rgb(107 114 128);
 $navbar-height: 7.7rem;
@@ -118,7 +119,7 @@ header {
   }
 }
 main .about {
-  padding: 3rem 0 2rem 0;
+  padding: 3rem 0 0;
   width: $virtual-widht;
   margin: 0 auto;
   min-height: 60rem;
@@ -282,6 +283,25 @@ main .about {
       padding: 0.2rem 0.5rem;
       background-color: #3f3f46;
       border-radius: 0.3rem;
+    }
+    .html-icon{
+      color: $orange;
+    }
+    .css-icon{
+      color: #0072b1;
+    }
+    .js-icon{
+      color: yellow;
+    }
+    .sass-icon{
+      color: red;
+    }
+    .vue-icon{
+      color: #1ed760;
+    }
+    i{
+      font-size: 2.5rem;
+      margin: 0 0.5rem;
     }
   }
 }

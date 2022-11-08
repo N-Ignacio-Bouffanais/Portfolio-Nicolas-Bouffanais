@@ -49,19 +49,19 @@ header .container {
 header .nav-item a::before {
   content: "0" counter(item) ".";
   margin-right: 0.5rem;
-  color: aqua;
+  color: rgb(3, 224, 224);
   text-align: right;
 }
 header .nav-item a:hover {
-  color: aqua;
+  color: rgb(3, 224, 224);
 }
 header .nav-link {
   transition: 0.5s ease;
 }
 header .nav-button {
-  color: aqua;
+  color: rgb(3, 224, 224);
   border-radius: 0.4rem;
-  border: 0.1rem solid aqua;
+  border: 0.1rem solid rgb(3, 224, 224);
   padding: 0.75rem 1rem;
 }
 header .nav-button:hover {
@@ -94,7 +94,7 @@ header .nav-button:hover {
 }
 .nav-main #icon-home {
   font-size: 3.2rem;
-  color: aqua;
+  color: rgb(3, 224, 224);
 }
 .nav-main .hamburger {
   display: none;
@@ -107,7 +107,7 @@ header .nav-button:hover {
   margin: 0.5rem auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: white;
+  background-color: rgb(3, 224, 224);
 }
 
 main .about {
@@ -196,7 +196,7 @@ main .about .about-main .lista-habilidades li {
 }
 main .about .about-main .lista-habilidades li::before {
   content: "-> ";
-  color: aqua;
+  color: rgb(3, 224, 224);
 }
 
 /*Section proyectos*/
@@ -281,7 +281,7 @@ main .about .about-main .lista-habilidades li::before {
   border-radius: 0.3rem;
 }
 .card-container .detail .html-icon {
-  color: #FFA500;
+  color: #ffa500;
 }
 .card-container .detail .css-icon {
   color: #0072b1;
@@ -335,7 +335,7 @@ footer .footer-container .footer-text {
 
 /*media querie*/
 @media (max-width: 768px) {
-  .hamburger {
+  .container .nav-main .hamburger {
     display: block;
   }
   .hamburger.active .bar:nth-child(2) {

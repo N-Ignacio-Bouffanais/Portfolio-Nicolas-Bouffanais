@@ -295,6 +295,9 @@ main .about .about-main .lista-habilidades li::before {
 .card-container .detail .vue-icon {
   color: #1ed760;
 }
+.card-container .detail .react-icon {
+  color: #00acee;
+}
 .card-container .detail i {
   font-size: 2.5rem;
   margin: 0 0.5rem;

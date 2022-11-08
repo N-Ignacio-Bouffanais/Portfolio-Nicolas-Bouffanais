@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "deploy": "gh-pages -d ."
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/N-Ignacio-Bouffanais/Portfolio-Nicolas-Bouffanais.git"
@@ -22,7 +20,6 @@
   },
   "homepage": "https://github.com/N-Ignacio-Bouffanais/Portfolio-Nicolas-Bouffanais#readme",
   "dependencies": {
-    "gh-pages": "4.0.0",
     "sass": "1.55.0"
   }
 }

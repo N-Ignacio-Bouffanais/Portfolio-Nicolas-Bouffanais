@@ -2,5 +2,6 @@
     "workbench.colorCustomizations": {
         "activityBar.activeBorder": "#422c74"
     },
-    "peacock.remoteColor": "#215732"
+    "peacock.remoteColor": "#215732",
+    "liveServer.settings.port": 5501
 }

@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import frontendmentor from '../public/favicon-32x32.png'
-import blog from '../public/blog.jpg'
-import theme from '../public/theme-switcher.jpg'
-import VueCard from '../public/card-vuejs.jpg'
-import AdviceGenerator from '../public/advice-generator.jpg'
-import RatingComponent from '../public/rating-component.jpg'
-import EasyBank from '../public/easybank-page.jpg'
+// import frontendmentor from '/favicon-32x32.png'
+// import blog from '/blog.jpg'
+// import theme from '/theme-switcher.jpg'
+// import VueCard from '/card-vuejs.jpg'
+// import AdviceGenerator from '/advice-generator.jpg'
+// import RatingComponent from '/rating-component.jpg'
+// import EasyBank from '/easybank-page.jpg'
 import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs'
 import { AiFillHtml5 } from 'react-icons/ai'
 import { DiCss3, DiJavascript1, DiSass } from 'react-icons/di'
@@ -88,7 +88,7 @@ export default function HomePage () {
                       rel='noreferrer'
                     >
                       <Image
-                        src={frontendmentor}
+                        src='/favicon-32x32.png'
                         alt='icon-frontend-mentor'
                         width={20}
                         height={32}
@@ -121,7 +121,7 @@ export default function HomePage () {
               >
                 <div className='card-container'>
                   <Image
-                    src={blog}
+                    src='/blog.jpg'
                     alt='Project image'
                     width={350}
                     height={150}
@@ -153,7 +153,7 @@ export default function HomePage () {
                 <div className='card-container'>
                   <figure className='proyect-image-container'>
                     <Image
-                      src={theme}
+                      src='/theme-switcher.jpg'
                       alt='Project image'
                       width={350}
                       height={150}
@@ -185,7 +185,7 @@ export default function HomePage () {
                 <div className='card-container'>
                   <figure className='proyect-image-container'>
                     <Image
-                      src={VueCard}
+                      src='/card-vuejs.jpg'
                       alt='Project image'
                       width={350}
                       height={150}
@@ -217,7 +217,7 @@ export default function HomePage () {
                 <div className='card-container'>
                   <figure className='proyect-image-container'>
                     <Image
-                      src={AdviceGenerator}
+                      src='/advice-generator.jpg'
                       alt='Project image'
                       width={350}
                       height={150}
@@ -249,7 +249,7 @@ export default function HomePage () {
                 <div className='card-container'>
                   <figure className='proyect-image-container'>
                     <Image
-                      src={RatingComponent}
+                      src='/rating-component.jpg'
                       alt='Project image'
                       width={350}
                       height={150}
@@ -282,7 +282,7 @@ export default function HomePage () {
                 <div className='card-container'>
                   <figure className='proyect-image-container'>
                     <Image
-                      src={EasyBank}
+                      src='/easybank-page.jpg'
                       alt='Project image'
                       width={350}
                       height={150}

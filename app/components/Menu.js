@@ -1,17 +1,20 @@
 "use client";
 import Link from "next/link";
-//import { useRef } from 'react';
 
 export default function Menu() {
-  //const ref = useRef(null);
   const handleClick = (event) => {
     event.currentTarget.classList.toggle("active");
     const el = document.getElementById('nav-menu');
     el.classList.toggle("active");
+    const hamburger = document.querySelector(".hamburger")
+    document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+      hamburger.classList.remove("active")
+      el.classList.remove("active")
+    }))
   };
   return (
-    <div>
-      <ol className="nav-menu" /*ref={ref}*/ id="nav-menu">
+    <>
+      <ol className="nav-menu" id="nav-menu">
         <li className="nav-item">
           <Link
             className="nav-link"
@@ -41,11 +44,11 @@ export default function Menu() {
           </Link>
         </li>
       </ol>
-      <div className="hamburguer" onClick={handleClick}>
+      <div className="hamburguer"  id="hamburguer" onClick={handleClick}>
         <span className="bar" />
         <span className="bar" />
         <span className="bar" />
       </div>
-    </div>
+    </>
   );
 }

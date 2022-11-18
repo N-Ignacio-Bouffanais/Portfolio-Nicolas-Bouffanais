@@ -96,10 +96,10 @@ header .nav-button:hover {
   font-size: 3.2rem;
   color: rgb(3, 224, 224);
 }
-.nav-main .hamburger {
-  display: none;
-  cursor: pointer;
-}
+.nav-main #hamburguer {
+    display: none;
+    cursor: pointer;
+  }
 .nav-main .bar {
   display: block;
   width: 2.5rem;
@@ -332,12 +332,11 @@ footer .footer-container .icons-footer {
 footer .footer-container .footer-text {
   padding: 1rem 2rem 4rem 2rem;
 }
-
 /*media querie*/
 @media (max-width: 768px) {
-  .container .nav-main .hamburger {
+  .nav-main #hamburger {
     display: block;
-  }
+  } 
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }

@@ -114,7 +114,7 @@ export default function HomePage () {
               >
                 <div className='card-container'>
                   <Image
-                    src='/blog.jpg'
+                    src='/blog.JPG'
                     alt='Project image'
                     width={350}
                     height={150}
@@ -146,7 +146,7 @@ export default function HomePage () {
                 <div className='card-container'>
                   <figure className='proyect-image-container'>
                     <Image
-                      src='/theme-switcher.jpg'
+                      src='/theme-switcher.JPG'
                       alt='Project image'
                       width={350}
                       height={150}
@@ -178,7 +178,7 @@ export default function HomePage () {
                 <div className='card-container'>
                   <figure className='proyect-image-container'>
                     <Image
-                      src='/card-vuejs.jpg'
+                      src='/card-vuejs.JPG'
                       alt='Project image'
                       width={350}
                       height={150}
@@ -210,7 +210,7 @@ export default function HomePage () {
                 <div className='card-container'>
                   <figure className='proyect-image-container'>
                     <Image
-                      src='/advice-generator.jpg'
+                      src='/advice-generator.JPG'
                       alt='Project image'
                       width={350}
                       height={150}
@@ -242,7 +242,7 @@ export default function HomePage () {
                 <div className='card-container'>
                   <figure className='proyect-image-container'>
                     <Image
-                      src='/rating-component.jpg'
+                      src='/rating-component.JPG'
                       alt='Project image'
                       width={350}
                       height={150}
@@ -275,7 +275,7 @@ export default function HomePage () {
                 <div className='card-container'>
                   <figure className='proyect-image-container'>
                     <Image
-                      src='/easybank-page.jpg'
+                      src='/easybank-page.JPG'
                       alt='Project image'
                       width={350}
                       height={150}

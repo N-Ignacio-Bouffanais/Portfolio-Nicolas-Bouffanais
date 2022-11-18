@@ -3,14 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/N-Ignacio-Bouffanais/Portfolio-Nicolas-Bouffanais.git"
   },
   "keywords": [
-    "SASS",
+    "nextjs",
+    "eslint",
     "HTML",
+    "CSS-flexbox",
     "CSS-grid"
   ],
   "author": "Nicolas Bouffanais",
@@ -20,6 +27,12 @@
   },
   "homepage": "https://github.com/N-Ignacio-Bouffanais/Portfolio-Nicolas-Bouffanais#readme",
   "dependencies": {
-    "sass": "1.55.0"
+    "@next/font": "13.0.3",
+    "eslint": "8.27.0",
+    "eslint-config-next": "13.0.3",
+    "next": "13.0.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "4.6.0"
   }
 }

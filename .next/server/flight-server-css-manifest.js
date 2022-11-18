@@ -1,0 +1,1 @@
+self.__RSC_CSS_MANIFEST={"__entry_css__":{"C:\\Users\\Nico\\Desktop\\Projects\\Portfolio-Nicolas-Bouffanais\\app\\page":["C:\\Users\\Nico\\Desktop\\Projects\\Portfolio-Nicolas-Bouffanais\\styles\\main.css"]},"C:\\Users\\Nico\\Desktop\\Projects\\Portfolio-Nicolas-Bouffanais\\app\\layout.js":["C:\\Users\\Nico\\Desktop\\Projects\\Portfolio-Nicolas-Bouffanais\\styles\\main.css"]}

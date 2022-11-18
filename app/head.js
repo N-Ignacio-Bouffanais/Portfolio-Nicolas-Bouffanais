@@ -7,6 +7,8 @@ export default function Head () {
         name='description'
         content='Portafolio de Nicolas Bouffanais, esta pagina web contiene proyectos de Reactjs, CSS, Nextjs, HTML5, JavaScript(ES6+)'
       />
+      {/*Google console */}
+      <meta name="google-site-verification" content="JMx7Vf14trwtlkeABopQYE3I-hPwcgysHKwYH9lMwXM" />
       <meta name='keywords' content='portafolio, Nicolas, Bouffanais, HTML, SASS, JavaScript, reactjs, nextjs, CSS-GRID, frontend developer, frontend engineer' />
       <meta name='author' content='Nicolas Ignacio Bouffanais Lay' />
       <meta name='theme-color' content='#1372db' />

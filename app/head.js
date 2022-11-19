@@ -13,7 +13,7 @@ export default function Head () {
       <meta name='author' content='Nicolas Ignacio Bouffanais Lay' />
       <meta name='theme-color' content='#1372db' />
       <meta content='width=device-width, initial-scale=1' name='viewport' />
-      <title>time slots app</title>
+      <title>Nicolas Bouffanais</title>
       <link rel='icon' href='/favicon.ico' />
     </>
   )

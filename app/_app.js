@@ -11,6 +11,9 @@ export default function MyApp ({ Component, pageProps }) {
         }
       `}
       </style>
+      <Head>
+        <link rel='shortcut icon' href='/favicon.ico' />
+      </Head>
       <Component {...pageProps} />
     </>
   )

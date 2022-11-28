@@ -233,7 +233,7 @@ main .about .about-main .lista-habilidades li::before {
   transform: translateX(0) scale(1.03);
 }
 .card-container img {
-  border-radius: 0.4rem 0.4rem 0 0;
+  border-radius: 0.6rem 0.6rem 0 0;
   background-size: contain;
   width: 100%;
   min-height: 15rem;
@@ -268,7 +268,7 @@ main .about .about-main .lista-habilidades li::before {
 .card-container .detail {
   background-color: #27272a;
   padding: 0.25rem 0.5rem;
-  border-radius: 0 0 0.5rem 0.5rem;
+  border-radius: 0 0 0.6rem 0.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;

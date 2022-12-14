@@ -211,7 +211,7 @@ main .about .about-main .lista-habilidades li::before {
 .proyectos h1 {
   font-size: 3.4rem;
   font-weight: 700;
-  margin: 1.5rem auto 2.5rem;
+  margin: 0.5rem auto 2.5rem;
   color: white;
   width: 85vw;
 }
@@ -245,7 +245,6 @@ main .about .about-main .lista-habilidades li::before {
 }
 .card-container h2 {
   font-size: 1.4rem;
-  margin-top: 0.5rem;
   font-weight: 700;
 }
 .card-container a {
@@ -263,7 +262,7 @@ main .about .about-main .lista-habilidades li::before {
 .card-container .card-body h2 {
   display: flex;
   justify-content: start;
-  margin: 1rem 0 0.5rem 0;
+  margin: 0 0 0.5rem 0;
 }
 .card-container .card-body p {
   color: rgb(107, 114, 128);
@@ -284,22 +283,22 @@ main .about .about-main .lista-habilidades li::before {
   background-color: #3f3f46;
   border-radius: 0.3rem;
 }
-.card-container .detail .html-icon {
+.card-container .detail .orange-icon {
   color: #ffa500;
 }
-.card-container .detail .css-icon {
+.card-container .detail .blue-icon {
   color: #0072b1;
 }
-.card-container .detail .js-icon {
+.card-container .detail .yellow-icon {
   color: yellow;
 }
-.card-container .detail .sass-icon {
+.card-container .detail .red-icon {
   color: red;
 }
-.card-container .detail .vue-icon {
+.card-container .detail .green-icon {
   color: #1ed760;
 }
-.card-container .detail .react-icon {
+.card-container .detail .light-blue-icon {
   color: #00acee;
 }
 .card-container .detail svg {

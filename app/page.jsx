@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3, DiJavascript1, DiSass, DiReact } from "react-icons/di";
+import { SiTypescript, SiFirebase } from "react-icons/si";
 import { FaVuejs, FaHome } from "react-icons/fa";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
@@ -43,6 +44,7 @@ export default function HomePage() {
                   <li>CSS-GRID</li>
                   <li>CSS-flexbox</li>
                   <li>SASS</li>
+                  <li>Vue JS</li>
                   <li>React JS</li>
                   <li>Node js</li>
                   <li>Nextjs</li>
@@ -107,6 +109,41 @@ export default function HomePage() {
             <h1>Some Things I’ve Built</h1>
             <div className="proyectos-main">
               <Link
+                title="Trivia Game"
+                target="_blank"
+                href="https://trivia-vue-ts.vercel.app/"
+                rel="noreferrer"
+              >
+                <div className="card-container">
+                  <figure className="proyect-image-container">
+                    <Image
+                      src="/trivia.JPG"
+                      alt="Trivia game image"
+                      width={350}
+                      height={150}
+                    />
+                  </figure>
+                  <div className="card-body">
+                    <h2>Trivia Game</h2>
+                    <p>
+                      This is a trivia game with five categoriesa and
+                      ranking.This project has authentication with firebase and
+                      was biuld with vue3 and Typescript.
+                    </p>
+                  </div>
+                  <div className="detail">
+                    <div className="detail-icons">
+                      <AiFillHtml5 className="orange-icon" />
+                      <DiSass className="red-icon" />
+                      <FaVuejs className="green-icon" />
+                      <SiTypescript className="blue-icon" />
+                      <SiFirebase className="yellow-icon" />
+                    </div>
+                    <p className="detail-date">13-12-2022</p>
+                  </div>
+                </div>
+              </Link>
+              <Link
                 title="Tips for developers"
                 target="_blank"
                 href="https://n-ignacio-bouffanais.github.io/Blog-tips-for-developers/"
@@ -129,9 +166,9 @@ export default function HomePage() {
                   </div>
                   <div className="detail">
                     <div className="detail-icons">
-                      <AiFillHtml5 className="html-icon" />
-                      <DiCss3 className="css-icon" />
-                      <DiJavascript1 className="js-icon" />
+                      <AiFillHtml5 className="orange-icon" />
+                      <DiCss3 className="blue-icon" />
+                      <DiJavascript1 className="yellow-icon" />
                     </div>
                     <p className="detail-date">06-10-2022</p>
                   </div>
@@ -161,9 +198,9 @@ export default function HomePage() {
                   </div>
                   <div className="detail">
                     <div className="detail-icons">
-                      <AiFillHtml5 className="html-icon" />
-                      <DiCss3 className="css-icon" />
-                      <DiJavascript1 className="js-icon" />
+                      <AiFillHtml5 className="orange-icon" />
+                      <DiCss3 className="blue-icon" />
+                      <DiJavascript1 className="yellow-icon" />
                     </div>
                     <p className="detail-date">24-10-2022</p>
                   </div>
@@ -194,9 +231,9 @@ export default function HomePage() {
                   </div>
                   <div className="detail">
                     <div className="detail-icons">
-                      <AiFillHtml5 className="html-icon" />
-                      <DiCss3 className="css-icon" />
-                      <DiReact className="react-icon" />
+                      <AiFillHtml5 className="orange-icon" />
+                      <DiCss3 className="blue-icon" />
+                      <DiReact className="blue-icon" />
                     </div>
                     <p className="detail-date">28-11-2022</p>
                   </div>
@@ -226,8 +263,8 @@ export default function HomePage() {
                   </div>
                   <div className="detail">
                     <div className="detail-icons">
-                      <AiFillHtml5 className="html-icon" />
-                      <DiSass className="sass-icon" />
+                      <AiFillHtml5 className="orange-icon" />
+                      <DiSass className="red-icon" />
                     </div>
                     <p className="detail-date">11-11-2022</p>
                   </div>
@@ -258,9 +295,9 @@ export default function HomePage() {
                   </div>
                   <div className="detail">
                     <div className="detail-icons">
-                      <AiFillHtml5 className="html-icon" />
-                      <DiCss3 className="css-icon" />
-                      <DiJavascript1 className="js-icon" />
+                      <AiFillHtml5 className="orange-icon" />
+                      <DiCss3 className="blue-icon" />
+                      <DiJavascript1 className="yellow-icon" />
                     </div>
                     <p className="detail-date">17-10-2022</p>
                   </div>
@@ -290,9 +327,9 @@ export default function HomePage() {
                   </div>
                   <div className="detail">
                     <div className="detail-icons">
-                      <AiFillHtml5 className="html-icon" />
-                      <DiCss3 className="css-icon" />
-                      <FaVuejs className="vue-icon" />
+                      <AiFillHtml5 className="orange-icon" />
+                      <DiCss3 className="blue-icon" />
+                      <FaVuejs className="green-icon" />
                     </div>
                     <p className="detail-date">03-10-2022</p>
                   </div>
@@ -322,9 +359,9 @@ export default function HomePage() {
                   </div>
                   <div className="detail">
                     <div className="detail-icons">
-                      <AiFillHtml5 className="html-icon" />
-                      <DiCss3 className="css-icon" />
-                      <DiJavascript1 className="js-icon" />
+                      <AiFillHtml5 className="orange-icon" />
+                      <DiCss3 className="blue-icon" />
+                      <DiJavascript1 className="yellow-icon" />
                     </div>
                     <p className="detail-date">25-10-2022</p>
                   </div>
